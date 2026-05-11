@@ -82,9 +82,10 @@ canvas {
 }
 
 .centralNavigation{
-    margin: auto;
-    width: 50%;
-    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
 }
 
 a {
