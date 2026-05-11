@@ -1,0 +1,98 @@
+@font-face {
+    font-family:header;
+    src: url(fonts/BBHHegarty-Regular.ttf);
+}
+@font-face {
+    font-family:body-text;
+    src: url(fonts/ElmsSans-ExtraLight.ttf);
+}
+
+@font-face {
+    font-family: changePageFont;
+    src: url(fonts/ElmsSans-Bold.ttf);
+}
+
+canvas {
+    display: block;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.homeAbout-page {
+    background-color: #004F62;
+}
+
+.mojito-background {
+    background-color: #FFDF3F;
+}
+
+.jeep-background {
+    background-color: #87ceeb;
+}
+
+.wavy-background {
+    background-color: #FF4960;
+}
+
+.stamps-background {
+    background-color: #00CDAD;
+}
+
+.home-title {
+    font-family: header;
+    color: white;
+    text-align: left;
+    max-width: 850px;
+    padding-top: 20px;
+    padding-left: 50px;
+    font-size: 80px;
+}
+
+.about-text {
+    font-family: body-text;
+    font-size: 15px;
+    color: white;
+    text-align: left;
+    padding-left: 1040px;
+    padding-top: 110px;
+    max-width: 398px;
+}
+
+.page-nav {
+    font-family: body-text;
+    color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+    padding-right: 65px;
+    padding-top: 35px;
+}
+
+#startButton {
+    font-family: changePageFont;
+    color: rgb(255, 230, 0);
+}
+
+.main-navi {
+    font-family: body-text;
+    color: white;
+    text-align: center;
+}
+
+.center{
+    margin: auto;
+    width: 50%;
+    text-align:center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}

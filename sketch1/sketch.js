@@ -1,0 +1,139 @@
+//ingredient class//
+class Ingredient {
+  constructor(img, x, y) {
+    this.img = img;
+    this.x = x; //current center of image X
+    this.y = y; //current center of img Y
+    this.dragging = false;
+    this.offsetX = 0;
+    this.offsetY = 0;
+  }
+   
+  draw() {
+    imageMode(CENTER);
+    image(this.img, this.x, this.y);
+  }
+  
+  //check mouse pressed code //
+  checkPressed() {
+    let halfW = this.img.width / 2;
+    let halfH = this.img.height / 2;
+    
+    //this checks: did the click land inside the individual IMAGE'S bounding box
+    if (
+      mouseX > this.x - halfW && mouseX < this.x + halfW &&
+      mouseY > this.y - halfH && mouseY < this.y +halfH
+    ) {
+    
+    this.dragging = true;
+    this.offsetX = this.x - mouseX;
+    this.offsetY = this.y - mouseY;
+    } 
+  }
+  
+  handleDrag() {
+    if (this.dragging) {
+      this.x = mouseX + this.offsetX;
+      this.y = mouseY + this.offsetY;
+    }
+  }
+  
+  release() {
+    this.dragging = false;
+  }
+}
+
+//Create mojito & drag ingredients page
+//Maliyah Miller
+
+//variable(s)
+let font;
+let bodyFont;
+let mojitoImg; //this is my drop target - where the ingredients land
+let ingredients = []; //only my ingredients (6) live in this array
+
+
+//always load images and fonts and music into preload so it's ready to go before js runs the code//
+
+function preload() {
+  font = loadFont("MojitoMainBlack.ttf");
+  bodyFont = loadFont("ElmsSans-ExtraLight.ttf");
+  mojitoImg = loadImage("mojito.png"); //drop target
+  
+  //ingredient(s) images
+  cube = loadImage("cube.png");
+  mint = loadImage("mint.png");
+  rum = loadImage("rum.png");
+  soda = loadImage("soda.png");
+  sour = loadImage("sour.png");
+  sugar = loadImage("sugar.png");
+}
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+  
+  mojitoX = width / 2;
+  mojitoY = 475;
+  
+  //spacing for the ingredients on the sketch
+  let imgs = [cube, mint, rum, soda, sour, sugar];
+  for (let i = 0; i < imgs.length; i++) {
+    let x = (i + 0.5) * (windowWidth / 6); //images have even-spaced cntrs
+    let y = 135;
+    ingredients.push(new Ingredient(imgs[i], x, y));
+  }
+}
+
+function draw() {
+  //page background
+  fill("#FFDF3F");
+  rect(0, 0, windowWidth, windowHeight);
+  
+  //poem text line & styling
+  fill("#FF004E");
+  textFont(font);
+  textSize(60);
+  textAlign(CENTER, CENTER);
+
+  //poem line of text
+  text("MOJITO PARA LA PLAYA.", width / 2, 705);
+  
+  //comment text under poem line
+  push();
+  textFont(bodyFont);
+  textSize(17)
+  text("place the ingredients into the cup", width / 2, 750);
+  pop();
+  
+  //drawing the mojito target image
+  imageMode (CENTER);
+  image(mojitoImg, mojitoX, mojitoY);
+  
+  for(let ing of ingredients) {
+    ing.draw();
+    }
+  
+ }
+
+//mouse events
+function mousePressed() {
+  for (let ing of ingredients) {
+    ing.checkPressed();
+  }
+}
+
+function mouseDragged() {
+  for (let ing of ingredients) {
+    ing.handleDrag();
+    }
+  }  
+
+function mouseReleased() {
+  for (let ing of ingredients) {
+    ing. release();
+  }
+}
