@@ -116,10 +116,10 @@ function draw() {
   for(let ing of ingredients) {
     ing.draw();
     }
-  
  }
 
-//mouse events
+
+ //mouse events
 function mousePressed() {
   for (let ing of ingredients) {
     ing.checkPressed();
