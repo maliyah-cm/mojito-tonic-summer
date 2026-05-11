@@ -161,6 +161,6 @@ function mouseReleased() {
   //checks if ALL 6 ingredients have been dropped onto the mojito
   let allDropped = ingredients.every(ing => ing.dropped);
   if (allDropped) {
-    window.location.href = " ";
+    window.location.href = "https://maliyah-cm.github.io/mojito-tonic-summer/sketch2/index.html";
   }
 }
