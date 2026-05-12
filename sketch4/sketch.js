@@ -28,7 +28,7 @@ let stamps = [];
 
 function preload() {
   font = loadFont("MojitoMainBlack.ttf");
-  bodyFont = loadFont("ElmsSans-ExtraLight.ttf");
+  bodyFont = loadFont("ElmsSans-Regular.ttf");
   //loading images in preload with each of it's variables
   habiscus = loadImage("conshe.png");
   conch = loadImage("palme.png");
@@ -73,7 +73,7 @@ function draw() {
   push();
   textFont(bodyFont);
   textSize(18)
-  text("> click around and collect momentos <", width / 2 * 1.03, 587);
+  text("click around and collect momentos", width / 2 * 1.03, 587);
   pop(); 
   
   
