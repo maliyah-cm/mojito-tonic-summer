@@ -55,9 +55,10 @@ let bodyFont;
 let mojitoImg; //this is my drop target - where the ingredients land
 let mojitoX, mojitoY;
 let ingredients = []; //only my ingredients (6) live in this array
+let glassDrop;
 
 //drop zone variables for the target area of the target img center
-const DROP_W = 780;
+const DROP_W = 880;
 const DROP_H = 680;
 
 
@@ -65,8 +66,9 @@ const DROP_H = 680;
 
 function preload() {
   font = loadFont("MojitoMainBlack.ttf");
-  bodyFont = loadFont("ElmsSans-Medium.ttf");
+  bodyFont = loadFont("ElmsSans-Bold.ttf");
   mojitoImg = loadImage("mojito.png"); //img drop target
+  glassDrop = loadSound("glassDrop.mp3");
   
   //ingredient(s) images
   cube = loadImage("cube.png");
@@ -123,7 +125,7 @@ function draw() {
   push();
   textFont(bodyFont);
   textSize(17)
-  text("place the ingredients into the cup", width / 2, 750);
+  text("place the ingredients inside the cup", width / 2, 750);
   pop();
   
   //drawing the mojito target image
@@ -153,8 +155,10 @@ function mouseReleased() {
     ing. release();
 
     //upon release, this checks if the ingredient's center is over the mojito
-    if (isOverMojito(ing.x, ing.y)) {
+    if (isOverMojito(ing.x, ing.y) && !ing.dropped) {
       ing.dropped = true;
+      glassDrop.stop();
+      glassDrop.play();
     }
   }
 
