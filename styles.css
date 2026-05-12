@@ -18,11 +18,10 @@
     src: url(fonts/ElmsSans-Black.ttf);
 }
 
-:root {
-    --button-bg-color: 255, 230, 0;
-    --button-bg-alpha: 0.1;
-    --button-shadow-color: 0, 0, 0;
-    --button-shadow-alpha: 0.3;
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
 canvas {
