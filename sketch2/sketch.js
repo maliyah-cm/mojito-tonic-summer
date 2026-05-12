@@ -56,9 +56,9 @@ function draw() {
   //dashed road line
   push();
   fill("white");
-  strokeWeight(3);
-  drawingContext.setLineDash([10, 25]);
-  line(-1, 723, windowWidth, 723);
+  strokeWeight(2.5);
+  drawingContext.setLineDash([50, 19]);
+  line(-1, 763, windowWidth, 763);
   pop();
 
   //solid road line

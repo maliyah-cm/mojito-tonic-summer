@@ -70,7 +70,7 @@ canvas {
     text-align: left;
     padding-left: 50px;
     padding-top: 4px;
-    max-width: 500px;
+    max-width: 571px;
 }
 
 .home-nav {
@@ -108,10 +108,19 @@ canvas {
 
 .centralNavigation{
     font-family: centralNavigation;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    height: 100vh;
+    height: 10vh;
+    font-size: 25px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+#centralNavigation:hover {
+    transform: translateY(-6px);
+    text-decoration: underline;
 }
 
 a {
