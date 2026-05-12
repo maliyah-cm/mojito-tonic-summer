@@ -61,15 +61,15 @@ function windowResized() {
 
 function draw() {
   // background('#FF4960');
-  let waveScale = 0.001;
+  let waveScale = 0.01;
   let waveLevel = 8.8;
-  let sliceH = 8;
+  let sliceH = 4;
   
   let ctx = drawingContext;
   let srcCanvas = mask.canvas;
 
   for (let y = 0; y < mask.height; y += sliceH) {
-    let xOffset = sin(y * waveScale + frameCount * -0.3) * waveLevel;
+    let xOffset = sin(y * waveScale + frameCount * -0.2) * waveLevel;
     ctx.drawImage(srcCanvas, 0, y, width, sliceH, xOffset, y, width, sliceH);
     // image(mask.get(0, y, mask.width, 1), xOffset, y);
   }
