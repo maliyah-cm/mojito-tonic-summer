@@ -57,8 +57,8 @@ let mojitoX, mojitoY;
 let ingredients = []; //only my ingredients (6) live in this array
 
 //drop zone variables for the target area of the target img center
-const DROP_W = 180;
-const DROP_H = 280;
+const DROP_W = 780;
+const DROP_H = 680;
 
 
 //always load images and fonts and music into preload so it's ready to go before js runs the code//
