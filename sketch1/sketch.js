@@ -65,7 +65,7 @@ const DROP_H = 280;
 
 function preload() {
   font = loadFont("MojitoMainBlack.ttf");
-  bodyFont = loadFont("ElmsSans-ExtraLight.ttf");
+  bodyFont = loadFont("ElmsSans-Medium.ttf");
   mojitoImg = loadImage("mojito.png"); //img drop target
   
   //ingredient(s) images

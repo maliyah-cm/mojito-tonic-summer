@@ -15,7 +15,7 @@
 
 @font-face {
     font-family: blackBodyText;
-    src: url(fonts/ElmsSans-Black.ttf);
+    src: url(fonts/ElmsSans-Medium.ttf);
 }
 
 body {
@@ -56,10 +56,11 @@ canvas {
     font-family: header;
     color: white;
     text-align: left;
-    max-width: 800px;
+    max-width: 700px;
     padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 50px;
-    font-size: 78px;
+    font-size: 75px;
 }
 
 .about-text {
@@ -84,22 +85,23 @@ canvas {
 
 #startButton {
     font-family: centralNavigation;
-    color: rgb(255, 230, 0);
-    font-size: 30px;
+    color: turquoise;
+    font-size: 40px;
     transition: all 0.3s ease;
     display: flex;
-    padding-right: 100px;
+    margin-right: 20px;
     transform-origin: center;
 
 }
 
 #startButton:hover {
-    transform: scale(1.2);
+    color: rgb(255, 230, 0);
+    transform: translateY(-20px);
     text-decoration: underline;
 }
 
 .main-navi {
-    font-family: body-text;
+    font-family: blackBodyText;
     color: white;
     text-align: center;
 }
