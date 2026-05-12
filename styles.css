@@ -120,6 +120,7 @@ canvas {
 
 a {
     font-family: centralNavigation;
+    color: white;
     text-decoration: none;
     display: flex;
     justify-content: center;
