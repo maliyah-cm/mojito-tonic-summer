@@ -59,7 +59,7 @@ let glassDrop;
 
 //drop zone variables for the target area of the target img center
 const DROP_W = 880;
-const DROP_H = 680;
+const DROP_H = 480;
 
 
 //always load images and fonts and music into preload so it's ready to go before js runs the code//
