@@ -88,8 +88,7 @@ canvas {
     color: turquoise;
     font-size: 40px;
     transition: all 0.3s ease;
-    display: flex;
-    margin-right: 20px;
+    margin-left: 850px;
     transform-origin: center;
 
 }
