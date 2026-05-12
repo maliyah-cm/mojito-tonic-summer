@@ -71,7 +71,7 @@ function draw() {
   textFont(font);
   fill("white");
   textSize(50);
-  text("PALMEAS Y TRÓPICAS", 580, 566);
+  text("PALMEAS Y TRÓPICAS", 700, 566);
 
   //block-cover for poem line
   fill("blue");

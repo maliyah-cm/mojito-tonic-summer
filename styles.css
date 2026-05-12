@@ -100,32 +100,32 @@ canvas {
     text-decoration: underline;
 }
 
-.main-navi {
-    font-family: blackBodyText;
-    color: white;
-    text-align: center;
-}
-
-.centralNavigation{
+.centralNav {
     font-family: centralNavigation;
     color: white;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    height: 10vh;
-    font-size: 25px;
+    font-size: 23px;
     transition: all 0.3s ease;
     transform-origin: center;
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
 }
 
-#centralNavigation:hover {
+.centralNav:hover {
     transform: translateY(-6px);
     text-decoration: underline;
 }
 
 a {
-    color: white;
+    font-family: centralNavigation;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
 }
 
 a:visited {

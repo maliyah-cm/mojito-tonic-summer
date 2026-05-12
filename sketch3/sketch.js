@@ -35,10 +35,6 @@ function setup() {
   pixelDensity(1);
   mask = createGraphics(windowWidth, 690);
 
-  function windowResized() {
-    resizeCanvas(windowWidth, windowHeight);
-  }
-
   //offscreen graphics buffer for the wave effect to take place later
   //in draw.
   mask.background("#FF4960");
@@ -57,23 +53,24 @@ function setup() {
   mask.textAlign(CENTER, CENTER);
   mask.text("relax and just watch the waves",width / 2 - 698, 580, 1390);
   pop();
-  
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
   // background('#FF4960');
-  let waveScale = 0.04;
-  let waveLevel = 12.3;
+  let waveScale = 0.01;
+  let waveLevel = 12.8;
   let sliceH = 4;
   
   let ctx = drawingContext;
   let srcCanvas = mask.canvas;
 
-  for (let y = 0; y < mask.height; y++) {
-    let xOffset = sin(y * waveScale + frameCount * -0.3) * waveLevel;
-
-    ctx.drawImage(
-      srcCanvas, 0, y, width, sliceH, xOffset, y, width, sliceH);
-    image(mask.get(0, y, mask.width, 1), xOffset, y);
+  for (let y = 0; y < mask.height; y += sliceH) {
+    let xOffset = sin(y * waveScale + frameCount * -0.1) * waveLevel;
+    ctx.drawImage(srcCanvas, 0, y, width, sliceH, xOffset, y, width, sliceH);
+    // image(mask.get(0, y, mask.width, 1), xOffset, y);
   }
 }
