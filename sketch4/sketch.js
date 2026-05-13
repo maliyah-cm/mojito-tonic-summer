@@ -50,7 +50,7 @@ function windowResized() {
 
 function draw() {
   //page background
-  fill("#00CDAD");
+  fill("#0addbd");
   rect(0, 0, windowWidth, windowHeight);
 
   imageMode(CENTER);
