@@ -6,6 +6,8 @@
 //Code version: p5.js 1.2.0
 //Availability: https://editor.p5js.org/aahyes/full/DwvjDrMSz
 
+//Cited Code used to help create lines 84-87.
+
 //Title: dmd-interactive-student-work
 //Author: Ava Lord
 //Date: <date accessed> 4/26/2026
