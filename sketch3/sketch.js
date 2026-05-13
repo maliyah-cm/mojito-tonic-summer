@@ -63,7 +63,7 @@ function draw() {
   // background('#FF4960');
   let waveScale = 0.4;
   let waveLevel = 3;
-  let sliceH = 5;
+  let sliceH = 4;
   
   let ctx = drawingContext;
   let srcCanvas = mask.canvas;
