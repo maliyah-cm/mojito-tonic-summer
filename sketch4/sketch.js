@@ -73,7 +73,7 @@ function draw() {
   push();
   textFont(bodyFont);
   textSize(18)
-  text("click around and collect momentos", width / 2, 570);
+  text("click around and collect momentos", width / 2, 550);
   pop(); 
   
   
