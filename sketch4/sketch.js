@@ -67,7 +67,7 @@ function draw() {
 
   //poem line of text, off center slightly on purpose
   text(
-    "LA LARGA ESPERA DE LAS VACACIONES Y EL DESCANSO ESTÁ LLEGANDO.", width / 2 - 530, height / 2, 1170);
+    "LA LARGA ESPERA DE LAS VACACIONES Y EL DESCANSO ESTÁ LLEGANDO.", width / 2 - 550, height / 2, 1170);
   
   //comment text under poem line
   push();
