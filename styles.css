@@ -65,11 +65,11 @@ canvas {
 
 .about-text {
     font-family: body-text;
-    font-size: 18px;
     color: white;
     text-align: left;
-    padding-left: 50px;
+    font-size: 18px;
     padding-top: 4px;
+    padding-left: 50px;
     max-width: 571px;
 }
 

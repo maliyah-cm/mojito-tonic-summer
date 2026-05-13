@@ -1,3 +1,33 @@
+//Cited Code to help create this p5.js sketch:
+
+//Prompt(s): 1)here's some code I'm going to ask you to reference later
+//to help me with my question/request coming up. 
+//For now don't do anything with it, but we'll call it "reference code"
+
+//2)The reference code is an example of how I can make images draggable
+//on the screen, and I want to do that for my images in my code I've just 
+//made. I've got multiple images so I'm unsure if and/or how I should make 
+//a class that I can just apply to the images and save time. can you show me
+// WITH COMMENTS on how I can do that with my code?
+
+//3)first, mojito is not an ingredient -- it's the dragging target; 
+//next in terms of the x and y location for the ingredients, space out
+//their x coordinate 1/6 of the windowWidth so that they're essentially
+//centered in a row, and their y is 100. make the mojito the dragging target.
+
+//3)Can you explain this code with comments and tell me how the student got the
+//sketch to open the next page in their website, so I can do that with my code.
+//For my code specifically, when the ingredient images are dragged onto to the target
+//image (th mojito image), I want it to then take the user to the next sketch/page of my website
+
+//AI tool: Claude, version Sonnet 4.6
+//Portions of the code from AI: Lines 30-43, 83, 87-88, 115-119, 128-133, 184-187
+
+//Title: Giving Tree
+//Author: Vim Evans
+//Date Accessed: 4/22/2026
+//Availability: https://williamnevans.github.io/givingtree/index.html
+
 //ingredient class//
 class Ingredient {
   constructor(img, x, y) {
@@ -46,7 +76,7 @@ class Ingredient {
   }
 }
 
-//Create mojito & drag ingredients page
+//Mojito & drag ingredients sketch
 //Maliyah Miller
 
 //variable(s)
@@ -60,7 +90,6 @@ let glassDrop;
 //drop zone variables for the target area of the target img center
 const DROP_W = 880;
 const DROP_H = 480;
-
 
 //always load images and fonts and music into preload so it's ready to go before js runs the code//
 
