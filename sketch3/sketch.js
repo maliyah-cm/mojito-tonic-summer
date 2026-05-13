@@ -27,7 +27,7 @@ let mask;
 
 function preload() {
   font = loadFont("MojitoMainBlack.ttf");
-  bodyFont = loadFont("ElmsSans-Regular.ttf");
+  bodyFont = loadFont("ElmsSans-Bold.ttf");
 }
 
 function setup() {
