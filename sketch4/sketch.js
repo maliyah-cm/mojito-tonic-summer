@@ -28,7 +28,7 @@ let stamps = [];
 
 function preload() {
   font = loadFont("MojitoMainBlack.ttf");
-  bodyFont = loadFont("ElmsSans-Regular.ttf");
+  bodyFont = loadFont("ElmsSans-Bold.ttf");
   //loading images in preload with each of it's variables
   habiscus = loadImage("conshe.png");
   conch = loadImage("palme.png");
