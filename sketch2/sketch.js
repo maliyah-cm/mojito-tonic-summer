@@ -6,6 +6,12 @@
 //Code version: p5.js 1.2.0
 //Availability: https://editor.p5js.org/aahyes/full/DwvjDrMSz
 
+//Title: dmd-interactive-student-work
+//Author: Ava Lord
+//Date: <date accessed> 4/26/2026
+//Code version: unavailable --website didn't provide access to p5.js web editor code 
+//Availability: https://lberdugo.github.io/dmd-interactive-student-work/lord_ava/
+
 //Move jeep to reveal text
 //Maliyah Miller
 
