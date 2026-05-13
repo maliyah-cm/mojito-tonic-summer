@@ -1,4 +1,5 @@
 /* Fonts */
+/* Personal Note: Don't delete fonts in any of your folders to avoid errors along the way!*/
 @font-face {
     font-family:header;
     src: url(fonts/BBHHegarty-Regular.ttf);
@@ -90,7 +91,6 @@ canvas {
     transition: all 0.3s ease;
     margin-left: 870px;
     transform-origin: center;
-
 }
 
 #startButton:hover {
@@ -125,7 +125,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    
 }
 
 a:visited {

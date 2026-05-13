@@ -21,7 +21,19 @@
 //image (th mojito image), I want it to then take the user to the next sketch/page of my website
 
 //AI tool: Claude, version Sonnet 4.6
-//Portions of the code from AI: Lines 30-43, 83, 87-88, 115-119, 128-133, 184-187
+//Portions of the code from AI: Lines 30-43, 83, 87-88, 99-119, 128-133, 184-187
+
+//Title: moving an image makes sound play
+//Author: Liat Berdugo
+//Date Accessed: 4/23/2026
+//Code Version: p5.js 1.11.13
+//Availability: https://editor.p5js.org/lberdugo/sketches/hx1-43sfv
+
+//Title: draggable image
+//Author: Liat Berdugo
+//Date Accessed: 4/23/2026
+//Code Version: p5.js 1.11.13
+//Availability: https://editor.p5js.org/lberdugo/sketches/wm1F3K5NN
 
 //Title: Giving Tree
 //Author: Vim Evans
