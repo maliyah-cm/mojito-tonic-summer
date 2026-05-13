@@ -1,4 +1,5 @@
-//Cited code to correct p5.js errors in intial code lines
+//Cited code to correct p5.js errors in my intial code lines
+
 //Prompt(s): 1) This code is supposed have the images act like
 //a stamp but they don't stay on screen when the mouse is clicked.
 //This is what I've done so far, LEAVE COMMENTS in the code
@@ -13,7 +14,6 @@
 //variables
 let font;
 let bodyFont;
-
 //stamp random - list of emoji images
 let randomEmoji = ["conshe.png", "palme.png", "sola.png", "habiscu.png"];
 let rEmoji = [];
@@ -23,7 +23,6 @@ let sunshine;
 let island;
 let conch;
 let habiscus;
-
 let stamps = [];
 
 function preload() {
@@ -75,8 +74,6 @@ function draw() {
   textSize(18)
   text("click around and collect momentos", width / 2, 550);
   pop(); 
-  
-  
 }
 
 function mousePressed() {

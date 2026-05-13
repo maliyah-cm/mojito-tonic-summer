@@ -12,8 +12,12 @@
 
 //3) How do i make a wavy mirage effect to text in p5.js?
 
+//4)I've noticed the wave effect is a little glitchy than i'd like it to
+//be and it makes the whole computer tab/page move slow. can you make it
+//run smoother and not make the whole webpage glitch out?
+
 //AI tool: Claude, version Sonnet 4.6 & Google Gemini
-//Portions of the code from AI: Lines 21, 31, & 46-52
+//Portions of the code from AI: Lines 21, 31, & 46-52, and 75-77
 
 //Wavy text visual interaction page
 //Maliyah Miller
@@ -71,6 +75,5 @@ function draw() {
   for (let y = 0; y < mask.height; y += sliceH) {
     let xOffset = sin(y * waveScale + frameCount * -0.02) * waveLevel;
     ctx.drawImage(srcCanvas, 0, y, width, sliceH, xOffset, y, width, sliceH);
-    // image(mask.get(0, y, mask.width, 1), xOffset, y);
   }
 }
