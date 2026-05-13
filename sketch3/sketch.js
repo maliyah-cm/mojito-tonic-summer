@@ -69,7 +69,7 @@ function draw() {
   let srcCanvas = mask.canvas;
 
   for (let y = 0; y < mask.height; y += sliceH) {
-    let xOffset = sin(y * waveScale + frameCount * -0.1) * waveLevel;
+    let xOffset = sin(y * waveScale + frameCount * -0.02) * waveLevel;
     ctx.drawImage(srcCanvas, 0, y, width, sliceH, xOffset, y, width, sliceH);
     // image(mask.get(0, y, mask.width, 1), xOffset, y);
   }
